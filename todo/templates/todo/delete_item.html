@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="">
+        <h2>Delete Todo List</h2>
+        <p>Are you sure you want to delete todo item <strong>{{todolist.title}}?</strong></p>
+        <form action="" method="post">
+            {%csrf_token%}
+            <button type="submit" name="confirm-delete" value="Delete">Delete</button>
+            <button><a href="{% url 'home' %}">Cancel</a></button>
+
+        </form>
+        
+    </div>
+
+    
+</body>
+</html>
